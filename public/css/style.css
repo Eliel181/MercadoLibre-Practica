@@ -16,10 +16,11 @@ body{
 
 main{
     background-color: #ebebed;
-    width: 90vw;
+    /* width: 90vw; */
     text-align: center;
 }
 
+    
 footer{
     text-align: center;
 }
@@ -53,24 +54,43 @@ nav ul li a {
 
 ul{
     list-style: none;
-}
+}   
 
 article{
     margin: 10px;
     background-color: white;
-    width: 70vw;
-    border-radius: 9px;
+    width: 270px;
 }
 
 /* article img{
     
 } */
 
-article i {
+main article i {
+    display: block;
+    padding: 5px;
+    width: 30px;
     color: #39b54a;
-
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    /* position: absolute; */
 }
 
+.busqueda{
+    background-color: white;
+    width: 195px;
+    border-radius: 5px;
+}
+
+.busqueda form input{
+    border: none;
+}
+
+.busqueda form button{
+    border: none;
+    background-color: white;
+    color: #666;
+}
 .burger-menu{
     text-align: center;
 }
@@ -82,14 +102,18 @@ article i {
     border-radius: 5px;
 }
 
+
 .precio{
     font-size: 18px;
+    width: 30%;
     /* border-top: solid 1px #ebebed; */
 }
 
 .descuento{
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
+    text-align: start;
 }
 
 .detalle-art{
@@ -97,11 +121,55 @@ article i {
     padding-left: 15px ; padding-right: 15px;
 }
 
+.detalle-art{
+    display: flex;
+    justify-content: center;
+}
 
 /* mobile */
 @media (max-width: 360px){
+    .barra-superior{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .barra-superior p{
+        margin-top: 10px; margin-bottom: 10px;
+    }
+    .busqueda{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .busqueda input{
+        width: 85%;
+    }
+    .logo{
+        width: 40%;
+    }
     ul{
         display: none;
+    }
+    .descripcion{
+        display: none;
+    }
+
+    .productos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .ofertas{
+        display: flex;
+        align-items: center;
+       flex-direction: column;
+    }
+    
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -113,8 +181,76 @@ article i {
     .burger-menu{
         display: none;
     }
+
+    .productos{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .ofertas{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .busqueda{
+        height: 40px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .busqueda input{
+        width: 85%;
+    }
+    .logo{
+        width: 30%;
+    }
+
+    .barra-superior{
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-around;
+        align-items: center;
+    }
+    form{
+        width: 100%;
+        
+    }
+
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px; margin-bottom: 15px;
+    }
+
+    .nav-left{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-right{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer article{
+        width: 30%;
+    }
+
+    .footer{
+        margin-top: 25px; margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
+/* desktop */
 @media (min-width: 769px){
 
 }
