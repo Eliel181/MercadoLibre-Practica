@@ -62,10 +62,6 @@ article{
     width: 270px;
 }
 
-/* article img{
-    
-} */
-
 main article i {
     display: block;
     padding: 5px;
@@ -124,6 +120,34 @@ main article i {
 .detalle-art{
     display: flex;
     justify-content: center;
+}
+
+/* estilos para el login */
+
+.container-form input{
+    width: 90%;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.container-form div{
+    padding: 30px 0;
+}
+
+.container-form button{
+    width: 90%;
+    background-color: #1259c3;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+}
+
+main{
+    padding-top: 20px; padding-bottom: 20px;
 }
 
 /* mobile */
@@ -247,6 +271,15 @@ main article i {
         display: flex;
         align-items: center;
         justify-content: space-around;
+    }
+
+    /* estilos login */
+
+    .container-form input{
+        width: 70%;  
+    }
+    .container-form button{
+        width: 70%;  
     }
 }
 
