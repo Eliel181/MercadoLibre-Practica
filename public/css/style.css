@@ -16,7 +16,6 @@ body{
 
 main{
     background-color: #ebebed;
-    /* width: 90vw; */
     text-align: center;
 }
 
@@ -80,6 +79,8 @@ main article i {
 
 .busqueda form input{
     border: none;
+    outline: none;
+    padding-left: 5px;
 }
 
 .busqueda form button{
@@ -98,6 +99,9 @@ main article i {
     border-radius: 5px;
 }
 
+.banner{
+    width: 100%;
+}
 
 .precio{
     font-size: 18px;
@@ -147,7 +151,7 @@ main article i {
 }
 
 main{
-    padding-top: 20px; padding-bottom: 20px;
+     padding-bottom: 20px;
 }
 
 /* mobile */
