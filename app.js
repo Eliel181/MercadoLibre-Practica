@@ -5,9 +5,9 @@ const path = require('path');
 
 app.use(express.static('public'));
 
-const PUERTO = 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(PUERTO, ()=>console.log(`Server lenvantado: PUERTO ${PUERTO}`));
+app.listen(port, ()=>console.log(`Server lenvantado: PUERTO ${port}`));
 
 app.get('/', function(req,res){
     res.sendFile(path.resolve(__dirname,'./views/home.html'));
