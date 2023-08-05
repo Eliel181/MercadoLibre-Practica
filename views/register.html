@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <title>Mercado Libre</title>
+    <title>Mercado Liebre</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <!-- Barra de navegacion de la pagina -->
 
     <header>
-        <h1>mercado libre</h1>
+        <h1>mercado liebre</h1>
 
         <nav>
             <div class="barra-superior">
@@ -49,10 +49,10 @@
                 </ul>
                 <ul class="nav-right">
                     <li>
-                        <a href="">Creá tu cuenta <i class="fas fa-id-card"></i></a>
+                        <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a>
                     </li>
                     <li>
-                        <a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                        <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
                     </li>
                     <li>
                         <a href="">Mis compras <i class="fas fa-shopping-basket"></i></a>
@@ -70,7 +70,7 @@
 
     <main>
         <div class="container-form">
-            <form action="" method="post">
+            <form action="/" method="post">
                 <h2>Registro</h2>
                 <div>
                     <input type="text" name="NyA" placeholder="Nombre y Apellido" required>
@@ -81,28 +81,49 @@
                 <div>
                     <input type="email" name="email" placeholder="E-mail" required>
                 </div>
-                <div>
+                <div class="fecha_nac">
                     <label for="fecha_nac">Fecha de nacimiento</label>
                     <input type="date" name="fecha_nac" placeholder="mm/dd/yyyy" required>
                 </div>
                 <div>
                     <input type="text" name="domicilio" placeholder="Domicilio" required>
                 </div>
-                <div>
+                <div class="perf_user">
+                    <div>
                     <label for="perfil_usuario">Perfil del usuario</label>
-                    <input type="radio" name="perfil" value="vendedor" required>Comprador
-                    <input type="radio" name="perfil" value="comprador" required>Vendedor
+                    </div>
+                    <div class="field">
+                    <input type="radio" name="perfil" value="vendedor" required><label for="">Comprador</label>
+                    </div>
+                    <div class="field">
+                    <input type="radio" name="perfil" value="comprador" required><label>Vendedor</label>
+                    </div>
                 </div>
-                <div>
+                <div class="perf_user">
+                    <div>
                     <label for="perfil_usuario">Intereses</label>
-                        <input type="checkbox" name="interes_usuario" value="electro" required>Electro
-                        <input type="checkbox" name="interes_usuario" value="moda" required>Moda
-                        <input type="checkbox" name="interes_usuario" value="hogar" required>hogar
-                        <input type="checkbox" name="interes_usuario" value="jugueteria" required>Jugueteria
-                        <input type="checkbox" name="interes_usuario" value="vida_sana" required>Vidasana
+                    </div>
+                        <div class="field">
+                        <input type="checkbox" name="interes_usuario" value="electro" required><label>Electro</label>
+                        </div>
+                        <div class="field">
+                        <input type="checkbox" name="interes_usuario" value="moda" required><label for="">Moda</label>
+                        </div>
+                        <div class="field">
+                        <input type="checkbox" name="interes_usuario" value="hogar" required><label for="">Hogar</label>
+                        </div>
+                        <div class="field">
+                        <input type="checkbox" name="interes_usuario" value="jugueteria" required><label>Jugueteria</label>
+                        </div>
+                        <div class="field">
+                        <input type="checkbox" name="interes_usuario" value="vida_sana" required><label>Vidasana</label>
+                        </div>
                 </div>
                 <div>
                     <input type="password" name="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="password" name="conf_pass" placeholder="Confirme contraseña">
                 </div>
                 <div>
                     <button type="submit">Registrarme</button>
@@ -119,7 +140,7 @@
 
     <footer>
 
-        <p>Copyright &copy; 1999-2023 MercadoLibre S.R.L.</p>
+        <p class="copy">Copyright &copy; 1999-2023 MercadoLibre S.R.L.</p>
     </footer>
 </body>
 
